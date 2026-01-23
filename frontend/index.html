@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Alert System - Telecom Industry Updates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="icon">📡</div>
+                <h1>Telecom Industry News Alerts</h1>
+                <p class="subtitle">Stay updated with the latest news, blogs, and case studies from leading telecom companies</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="info-section">
+                <h2>What We Monitor</h2>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">📰</span>
+                        <h3>Latest News</h3>
+                        <p>Press releases and announcements from major telecom companies</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✍️</span>
+                        <h3>Blog Posts</h3>
+                        <p>Insights and thought leadership from industry experts</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📊</span>
+                        <h3>Case Studies</h3>
+                        <p>Real-world implementations and customer success stories</p>
+                    </div>
+                </div>
+
+                <div class="companies">
+                    <h3>Monitored Companies</h3>
+                    <div class="company-list">
+                        <span class="company-tag">Ericsson</span>
+                        <span class="company-tag">Nokia</span>
+                        <span class="company-tag">Huawei</span>
+                        <span class="company-tag">Cisco</span>
+                        <span class="company-tag">Samsung</span>
+                        <span class="company-tag">ZTE</span>
+                        <span class="company-tag">Motorola</span>
+                        <span class="company-tag">Ciena</span>
+                        <span class="company-tag">CommScope</span>
+                        <span class="company-tag">Juniper</span>
+                        <span class="company-tag">HPE</span>
+                        <span class="company-tag">And 25+ more...</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe-section">
+                <h2>Subscribe to Alerts</h2>
+                <p>Get instant email notifications when new articles are published</p>
+
+                <form id="subscribeForm" class="subscribe-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email address" 
+                            required
+                            autocomplete="email"
+                        >
+                        <button type="submit" class="btn-primary">
+                            <span id="btnText">Subscribe</span>
+                            <span id="btnLoader" class="loader" style="display: none;"></span>
+                        </button>
+                    </div>
+                    <div id="message" class="message"></div>
+                </form>
+
+                <p class="privacy-note">
+                    🔒 Your email is safe with us. We only send notifications about new articles. Unsubscribe anytime.
+                </p>
+            </section>
+
+            <section class="unsubscribe-section">
+                <details>
+                    <summary>Want to unsubscribe?</summary>
+                    <form id="unsubscribeForm" class="unsubscribe-form">
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="unsubEmail" 
+                                name="email" 
+                                placeholder="Enter your email address" 
+                                required
+                            >
+                            <button type="submit" class="btn-secondary">Unsubscribe</button>
+                        </div>
+                        <div id="unsubMessage" class="message"></div>
+                    </form>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <p>News Alert System &copy; 2026 | Monitoring 60+ telecom industry sources</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
